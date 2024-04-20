@@ -7,3 +7,6 @@ class And(LogicalConnective):
 
     def check_condition(self, model: Model) -> bool:
        return all(arg.check_condition(model) for arg in self.args)
+    
+    def __repr__(self) -> str:
+        return "(" + " ∧ ".join(map(str, self.args)) + ")"

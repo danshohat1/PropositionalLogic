@@ -12,3 +12,6 @@ class KnowledgeBase:
         return all(connective.check_condition(model) for connective in self.connectives)
     def remove(self, connective) -> None:
         self.connectives.remove(connective)
+    
+    def __repr__(self) -> str:
+        return " ∧ ".join(str(connective) for connective in self.connectives)

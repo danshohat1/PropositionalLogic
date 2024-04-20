@@ -13,6 +13,7 @@ class LogicalConnective(ABC):
         # return a set of all the args that are symbols
        return {arg for arg in self.args if isinstance(arg, Symbol)} 
     
+    
     @abstractmethod
     def check_condition(self, model: Model) -> bool:
         pass

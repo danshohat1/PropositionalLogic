@@ -7,3 +7,7 @@ class Or(LogicalConnective):
     
     def check_condition(self, model: Model) -> bool:
         return any(arg.check_condition(model) for arg in self.args)
+
+    def __repr__(self) -> str:
+        return "(" + " v ".join(map(str, self.args)) + ")"
+
