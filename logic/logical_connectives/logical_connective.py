@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Dict
-from .proposition_symbol import Symbol
+from ..symbols import *
 
 Model = Dict[str, bool]
 

@@ -1,6 +1,6 @@
 from .logical_connectives import *
 from .knowledge import KnowledgeBase
-from .logical_connectives.proposition_symbol import Symbol
+from .symbols import *
 from typing import Set, Dict
 
 
